@@ -9,6 +9,8 @@ Note: This program assumes that you are level 70 and have everything unlocked.
 * Takes into consideration Bling and One Man Army.
 
 ## Example
+
+Example Output 1:
 ```
 Primary: F2000 [ Grenade Launcher ]
 Secondary: SPAS-12 [ Silencer ]
@@ -18,6 +20,17 @@ Perk 3: Steady Aim
 Death Streak: Martyrdom
 Equipment: Semtex
 Special Grenade: Smoke Grenade
+```
+Example Output 2:
+```
+Primary: TAR-21 [ ACOG Scope ] [ Silencer ]
+Secondary: M1014 [ Red Dot Sight ] [ Grip ]
+Perk 1: Bling
+Perk 2: Stopping Power
+Perk 3: Last Stand
+Death Streak Painkiller
+Equipment: Throwing Knife
+Special Grenade: Flash Grenade
 ```
 
 ## Improvements
