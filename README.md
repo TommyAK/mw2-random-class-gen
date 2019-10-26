@@ -15,7 +15,7 @@ Secondary: SPAS-12 [ Silencer ]
 Perk 1: Marathon
 Perk 2: Danger Close
 Perk 3: Steady Aim
-Death Streak Martyrdom
+Death Streak: Martyrdom
 Equipment: Semtex
 Special Grenade: Smoke Grenade
 ```
@@ -24,3 +24,4 @@ Special Grenade: Smoke Grenade
 * Support for custom items found in third-party clients (e.g. IW4x).
 * Clean up and simplify the code.
 * Improve output readability.
+* Killstreak support
