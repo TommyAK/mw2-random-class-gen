@@ -20,8 +20,8 @@ Equipment: Semtex
 Special Grenade: Smoke Grenade
 ```
 
-## To Do
+## Improvements
 * Support for custom items found in third-party clients (e.g. IW4x).
 * Clean up and simplify the code.
 * Improve output readability.
-* Killstreak support
+* Killstreak support.
