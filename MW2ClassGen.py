@@ -30,7 +30,7 @@ def Main():
     ds = death_streaks
     random.shuffle(ds)
     for dest in range(1):
-        print('Death Streak', ds[dest])
+        print('Death Streak:', ds[dest])
     equip = equipment
     random.shuffle(equip)
     for eq in range(1):
