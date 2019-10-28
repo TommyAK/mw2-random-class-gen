@@ -2,6 +2,7 @@ import random
 import itertools
 from random import shuffle
 
+
 def Main():
     print("--MW2 Class Generator--")
     print("This program will generate a random class.")
@@ -40,9 +41,11 @@ def Main():
     for sg in range(1):
         print('Special Grenade:', specg[sg])
 
+
 def Primary():
     primary = random.choice(assault_rifles + submachine_guns + light_machine_guns + sniper_rifles + riot_shield)
     return primary
+
 
 def SecondaryNoBling():
     secondary = random.choice(machine_pistols + shotguns + handguns + launchers)
@@ -63,6 +66,7 @@ def SecondaryNoBling():
         print('Secondary:', secondary, '[', attach1, ']')
     elif secondary in launchers:
         print('Secondary:', secondary)
+
 
 def SecondaryBling():
     secondary = random.choice(machine_pistols + shotguns + handguns + launchers)
@@ -104,6 +108,7 @@ def SecondaryBling():
     elif secondary in launchers:
         print('Secondary:', secondary)
 
+
 def PrimaryBling():
     result = random.choice(assault_rifles + submachine_guns + light_machine_guns + sniper_rifles + riot_shield)
     if result in assault_rifles:
@@ -137,6 +142,7 @@ def PrimaryBling():
     elif result in riot_shield:
         print('Primary:', result)
 
+
 def PrimaryNoBling():
     result = Primary()
     if result in assault_rifles:
@@ -154,8 +160,10 @@ def PrimaryNoBling():
     elif result in riot_shield:
         print('Primary:', result)
 
+
 def NoSecondary():
     print('No Secondary (OMA)')
+
 
 # Primary Weapons
 assault_rifles = ['M4A1', 'FAMAS', 'SCAR-H', 'TAR-21', 'FAL', 'M16A4', 'ACR', 'F2000', 'AK-47']
@@ -178,49 +186,49 @@ launchers = ['AT4-HS', 'Thumper', 'Stinger', 'Javelin', 'RPG-7']
 ar_sights = ['Red Dot Sight', 'ACOG Scope', 'Holographic Sight', 'Thermal Scope']
 ar_underbarrel = ['Grenade Launcher', 'Shotgun Attachment']
 ar_misc = ['Silencer', 'FMJ', 'Heartbeat Sensor', 'Extended Mags']
-#ar_attachments = ['Grenade Launcher', 'Red Dot Sight', 'Silencer', 'FMJ', 'ACOG Scope', 'Shotgun Attachment', 'Holographic Sight', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
+# ar_attachments = ['Grenade Launcher', 'Red Dot Sight', 'Silencer', 'FMJ', 'ACOG Scope', 'Shotgun Attachment', 'Holographic Sight', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
 
 # Submachine Gun Attachments
 smg_sights = ['Red Dot Sight', 'ACOG Scope', 'Holographic Sight', 'Thermal Scope']
 smg_dualwield = ['Akimbo']
 smg_misc = ['Rapid Fire', 'Silencer', 'FMJ', 'Extended Mags']
-#smg_attachments = ['Rapid Fire', 'Red Dot Sight', 'Silencer', 'ACOG Scope', 'FMJ', 'Akimbo', 'Holographic Sight', 'Thermal Scope', 'Extended Mags']
+# smg_attachments = ['Rapid Fire', 'Red Dot Sight', 'Silencer', 'ACOG Scope', 'FMJ', 'Akimbo', 'Holographic Sight', 'Thermal Scope', 'Extended Mags']
 
 # Light Machine Gun Attachments
 lmg_sights = ['Red Dot Sight', 'ACOG Scope', 'Holographic Sight', 'Thermal Scope']
 lmg_misc = ['Grip', 'Silencer', 'FMJ', 'Heartbeat Sensor', 'Extended Mags']
-#lmg_attachments = ['Grip', 'Red Dot Sight', 'Silencer', 'FMJ', 'ACOG Scope', 'FMJ', 'Holographic Sight', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
+# lmg_attachments = ['Grip', 'Red Dot Sight', 'Silencer', 'FMJ', 'ACOG Scope', 'FMJ', 'Holographic Sight', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
 
 # Sniper Rifle Attachments
 sniper_scopes = ['ACOG Scope', 'Thermal Scope']
 sniper_misc = ['Silencer', 'FMJ', 'Heartbeat Sensor', 'Extended Mags']
-#sniper_attachments = ['Stock Scope', 'Silencer', 'ACOG Scope', 'FMJ', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
+# sniper_attachments = ['Stock Scope', 'Silencer', 'ACOG Scope', 'FMJ', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
 
 # Machine Pistol Attachments
 mp_sights = ['Red Dot Sight', 'Holographic Sight']
 mp_dualwield = ['Akimbo']
 mp_misc = ['Silencer', 'FMJ', 'Extended Mags']
-#mp_attachments = ['Red Dot Sight', 'Silencer', 'FMJ', 'Akimbo', 'Holographic Sight', 'Extended Mags']
+# mp_attachments = ['Red Dot Sight', 'Silencer', 'FMJ', 'Akimbo', 'Holographic Sight', 'Extended Mags']
 
 # Shotgun Attachments
-sg_sights = ['Red Dot Sight', 'Holographic Sight',]
+sg_sights = ['Red Dot Sight', 'Holographic Sight', ]
 sg_misc = ['Silencer', 'Grip', 'FMJ', 'Extended Mags']
-#sg_attachments = ['Red Dot Sight', 'Silencer', 'Grip', 'FMJ', 'Holographic Sight', 'Extended Mags']
+# sg_attachments = ['Red Dot Sight', 'Silencer', 'Grip', 'FMJ', 'Holographic Sight', 'Extended Mags']
 
 # 1887 & Ranger Attachments
 ogsg_dualwield = ['Akimbo']
 ogsg_misc = ['FMJ']
-#ogsg_attachments = ['Akimbo', 'FMJ']  # Ranger + Model 1887
+# ogsg_attachments = ['Akimbo', 'FMJ']  # Ranger + Model 1887
 
 # Handgun Attachments
 hg_misc = ['FMJ', 'Silencer', 'Extended Mags', 'Tactical Knife']
 hg_dualwield = ['Akimbo']
-#hg_attachments = ['FMJ, Silencer', 'Akimbo', 'Tactical Knife', 'Extended Mags']
+# hg_attachments = ['FMJ, Silencer', 'Akimbo', 'Tactical Knife', 'Extended Mags']
 
 # .44 and DE
 oghg_misc = ['FMJ', 'Knife']
 oghg_dualwield = ['Akimbo']
-oghg_attachments = ['FMJ', 'Akimbo', 'Tactical Knife']  # Desert Eagle + .44 Magnum
+# oghg_attachments = ['FMJ', 'Akimbo', 'Tactical Knife']  # Desert Eagle + .44 Magnum
 
 # Misc
 equipment = ['Frag', 'Semtex', 'Throwing Knife', 'Tactical Insertion', 'Blast Shield', 'Claymore', 'C4']
@@ -233,4 +241,3 @@ perk_2 = ['Stopping Power', 'Lightweight', 'Hardline', 'Cold-Blooded', 'Danger C
 perk_3 = ['Commando', 'Steady Aim', 'Scrambler', 'Ninja', 'SitRep', 'Last Stand']
 
 Main()
-
