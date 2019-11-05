@@ -1,12 +1,12 @@
 # mw2-random-class-gen
 
-This is a small program I developed in Python that will generate a random MW2 class. 
+This is a small program I developed in Python that will generate a random class in Modern Warfare 2. 
 
 Note: This program assumes that you are level 70 and have everything unlocked.
 
 ## Features
 * Generates a random class in seconds!
-* Takes into consideration Bling and One Man Army.
+* Takes into consideration all perks and attachments.
 
 ## Example
 
@@ -34,7 +34,7 @@ Special Grenade: Flash Grenade
 ```
 
 ## Improvements
-* Support for custom items found in third-party clients (e.g. IW4x).
+* Support for custom items found in third-party clients.
 * Clean up and simplify the code.
 * Improve output readability.
 * Killstreak support.
