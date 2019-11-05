@@ -1,12 +1,28 @@
 import random
-import itertools
-from random import shuffle
 
+def Menu():
+    print("MW2 Class Generator!")
+    print("This program will generate a random class.")
+    print('----------------------------------------')
+    print("Type 'y' to generate a random class.")
+    print("Type 'n' to exit the program.")
+    print('----------------------------------------')
+    Choice()
+
+def Choice():
+    while True:
+        answer = input("Input: ")
+        if answer in ('n', 'y'):
+            break
+        print('Invalid input, must be "y" or "n"')
+    if answer == 'n':
+        exit("Exiting...")
+    elif answer == 'y':
+        Main()
 
 def Main():
-    print("--MW2 Class Generator--")
-    print("This program will generate a random class.")
-    print("#################################")
+    print("Your Random Class:")
+    print("----------------------------------------")
     p1 = random.choice(perk_1)
     if p1 == 'Bling':
         PrimaryBling()
@@ -40,6 +56,10 @@ def Main():
     random.shuffle(specg)
     for sg in range(1):
         print('Special Grenade:', specg[sg])
+    print("----------------------------------------")
+    print("Type 'y' to generate another random class.")
+    print("Type 'n' to exit the program.")
+    Choice()
 
 
 def Primary():
@@ -180,55 +200,44 @@ handguns = ['USP .45', 'M9']
 og_handguns = ['.44 Magnum', 'Desert Eagle']
 launchers = ['AT4-HS', 'Thumper', 'Stinger', 'Javelin', 'RPG-7']
 
-# Attachments
-
 # Assault Rifle Attachments
 ar_sights = ['Red Dot Sight', 'ACOG Scope', 'Holographic Sight', 'Thermal Scope']
 ar_underbarrel = ['Grenade Launcher', 'Shotgun Attachment']
 ar_misc = ['Silencer', 'FMJ', 'Heartbeat Sensor', 'Extended Mags']
-# ar_attachments = ['Grenade Launcher', 'Red Dot Sight', 'Silencer', 'FMJ', 'ACOG Scope', 'Shotgun Attachment', 'Holographic Sight', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
 
 # Submachine Gun Attachments
 smg_sights = ['Red Dot Sight', 'ACOG Scope', 'Holographic Sight', 'Thermal Scope']
 smg_dualwield = ['Akimbo']
 smg_misc = ['Rapid Fire', 'Silencer', 'FMJ', 'Extended Mags']
-# smg_attachments = ['Rapid Fire', 'Red Dot Sight', 'Silencer', 'ACOG Scope', 'FMJ', 'Akimbo', 'Holographic Sight', 'Thermal Scope', 'Extended Mags']
 
 # Light Machine Gun Attachments
 lmg_sights = ['Red Dot Sight', 'ACOG Scope', 'Holographic Sight', 'Thermal Scope']
 lmg_misc = ['Grip', 'Silencer', 'FMJ', 'Heartbeat Sensor', 'Extended Mags']
-# lmg_attachments = ['Grip', 'Red Dot Sight', 'Silencer', 'FMJ', 'ACOG Scope', 'FMJ', 'Holographic Sight', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
 
 # Sniper Rifle Attachments
 sniper_scopes = ['ACOG Scope', 'Thermal Scope']
 sniper_misc = ['Silencer', 'FMJ', 'Heartbeat Sensor', 'Extended Mags']
-# sniper_attachments = ['Stock Scope', 'Silencer', 'ACOG Scope', 'FMJ', 'Heartbeat Sensor', 'Thermal Scope', 'Extended Mags']
 
 # Machine Pistol Attachments
 mp_sights = ['Red Dot Sight', 'Holographic Sight']
 mp_dualwield = ['Akimbo']
 mp_misc = ['Silencer', 'FMJ', 'Extended Mags']
-# mp_attachments = ['Red Dot Sight', 'Silencer', 'FMJ', 'Akimbo', 'Holographic Sight', 'Extended Mags']
 
 # Shotgun Attachments
 sg_sights = ['Red Dot Sight', 'Holographic Sight', ]
 sg_misc = ['Silencer', 'Grip', 'FMJ', 'Extended Mags']
-# sg_attachments = ['Red Dot Sight', 'Silencer', 'Grip', 'FMJ', 'Holographic Sight', 'Extended Mags']
 
 # 1887 & Ranger Attachments
 ogsg_dualwield = ['Akimbo']
 ogsg_misc = ['FMJ']
-# ogsg_attachments = ['Akimbo', 'FMJ']  # Ranger + Model 1887
 
 # Handgun Attachments
 hg_misc = ['FMJ', 'Silencer', 'Extended Mags', 'Tactical Knife']
 hg_dualwield = ['Akimbo']
-# hg_attachments = ['FMJ, Silencer', 'Akimbo', 'Tactical Knife', 'Extended Mags']
 
-# .44 and DE
+# .44 Revolver and Desert Eagle
 oghg_misc = ['FMJ', 'Knife']
 oghg_dualwield = ['Akimbo']
-# oghg_attachments = ['FMJ', 'Akimbo', 'Tactical Knife']  # Desert Eagle + .44 Magnum
 
 # Misc
 equipment = ['Frag', 'Semtex', 'Throwing Knife', 'Tactical Insertion', 'Blast Shield', 'Claymore', 'C4']
@@ -240,4 +249,4 @@ perk_1 = ['Marathon', 'Sleight of Hand', 'Scavenger', 'Bling', 'One Man Army']
 perk_2 = ['Stopping Power', 'Lightweight', 'Hardline', 'Cold-Blooded', 'Danger Close']
 perk_3 = ['Commando', 'Steady Aim', 'Scrambler', 'Ninja', 'SitRep', 'Last Stand']
 
-Main()
+Menu()
