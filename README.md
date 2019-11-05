@@ -36,5 +36,5 @@ Special Grenade: Flash Grenade
 ## Improvements
 * Support for custom items found in third-party clients.
 * Clean up and simplify the code.
-* Improve output readability.
+* ~~Improve output readability.~~ 
 * Killstreak support.
