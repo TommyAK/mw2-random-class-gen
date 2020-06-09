@@ -1,6 +1,6 @@
 # mw2-random-class-gen
 
-This is a small program I developed in Python that will generate a random class in Modern Warfare 2. 
+This is a small program I developed in Python that will generate a random class from Modern Warfare 2. 
 
 Note: This program assumes that you are level 70 and have everything unlocked.
 
